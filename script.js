@@ -36,18 +36,42 @@ export function exercise03(args) {
 export function exercise04(args) {
   const input = "Two Words"
   const result = []
-  let count = 0
+  const count = +1
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     if (currentElement === "spaces") {
-      count = count + 1
+      count++
     }
   }
   return arr.filter((word) => word !== "").length
 }
-export function countWords(str) {
-  const arr = str.split(" ")
 
-  return arr.filter((word) => word !== "").length
+export function exercise05(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (((currentElement === "65") == currentElement) == "90") {
+      return true
+    } else {
+      return false
+    }
+  }
+  return false
+}
+
+export function exercise08(args) {
+  const input = args
+  let result = []
+
+  for (let i = 0; i < input.length; i++) {
+    let currentElement = input[i]
+    if (((currentElement === "e") == currentElement) === "3") {
+      result.push()
+    }
+    result.push(currentElement)
+  }
+  return result.join("")
 }
