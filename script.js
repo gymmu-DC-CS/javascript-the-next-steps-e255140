@@ -34,17 +34,19 @@ export function exercise03(args) {
 }
 
 export function exercise04(args) {
-  const input = "Two Words"
+  const input = args
   const result = []
-  const count = +1
+  let count = 0
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if (currentElement === "spaces") {
-      count++
+    if (currentElement === "") {
+      count = count + 1
+    } else if (currentElement) {
+      count = count + 1
     }
   }
-  return arr.filter((word) => word !== "").length
+  return count
 }
 
 export function exercise05(args) {
@@ -64,14 +66,15 @@ export function exercise05(args) {
 
 export function exercise08(args) {
   const input = args
-  let result = []
+  const result = []
 
   for (let i = 0; i < input.length; i++) {
-    let currentElement = input[i]
-    if (((currentElement === "e") == currentElement) === "3") {
-      result.push()
+    const currentElement = input[i]
+    if (currentElement === "e") {
+      result.push("3")
+    } else {
+      result.push(currentElement)
     }
-    result.push(currentElement)
   }
   return result.join("")
 }
